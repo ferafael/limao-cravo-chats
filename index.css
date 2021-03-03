@@ -1,0 +1,8 @@
+#chart{
+    height: 250px;
+    width: 250px;
+    margin-top: 50px;
+}
+#chart__title{
+    margin-top: 1px;
+}

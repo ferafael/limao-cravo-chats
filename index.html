@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Painel | ADM - Residentes</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://residencia.abhh.com.br/painel/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="https://residencia.abhh.com.br/painel/css/style.css?id=1614710956" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="https://residencia.abhh.com.br/painel/css/colors/blue.css" id="theme" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <!-- Calendario -->
+    <link href="https://residencia.abhh.com.br/painelcss/calender.css" rel="stylesheet">
+    <link href="https://residencia.abhh.com.br/painelcss/card.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://residencia.abhh.com.br/painelimages/favicon.ico" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+<link href="https://residencia.abhh.com.br/painel/calendario/fullcalendar.css" rel="stylesheet" />
+<link href="https://residencia.abhh.com.br/painel/calendario/fullcalendar.print.css" rel="stylesheet" media="print" />
+<link href="https://residencia.abhh.com.br/painel/css/daterangepicker.css" rel="stylesheet">
+<link href="https://residencia.abhh.com.br/painel/css/jquery-clockpicker.min.css" rel="stylesheet">
+<link href="https://residencia.abhh.com.br/painel/css/bootstrap-timepicker.min.css" rel="stylesheet">
+
+<link href="https://residencia.abhh.com.br/painel/css/multi-select.css" rel="stylesheet" type="text/css" />
+<link href="https://residencia.abhh.com.br/painel/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="https://residencia.abhh.com.br/painel/css/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="https://residencia.abhh.com.br/painel/css/switchery.min.css" rel="stylesheet" />
+<link href="https://residencia.abhh.com.br/painel/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="https://residencia.abhh.com.br/painel/css/bootstrap-tagsinput.css" rel="stylesheet" />
+<link href="https://residencia.abhh.com.br/painel/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https:code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://residencia.abhh.com.br/painel/calendario/jquery.min.js"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+        <!-- Preloader - style you can find in spinners.css -->
+<!--     <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div> -->
+    <div class="container">
+        <h1>Grafico 1</h1>
+        <div class="row">
+            <div class="col-6" id="chart">
+                <div id="chart__title">
+                    <h2>Residentes que mais acessa</h2>
+                </div>
+                <canvas id="userAcess"></canvas>
+            </div>
+            <div class="col-6" id="chart">
+                <div id="chart__title">
+                    <h2>PodCast mais acessado</h2>
+                </div>
+                <canvas id="userPodcast"></canvas>
+               
+            </div>
+            <div class="col-6" id="chart">
+                <div id="chart__title">
+                    <h2>Webnar</h2>
+                </div>
+                <canvas id="userWebnar"></canvas>
+            </div>
+        </div> 
+    </div>
+    
+   
+    
+        
+        
+               
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://residencia.abhh.com.br/painel/js/funcoes.js"></script>
+    <script src="https://residencia.abhh.com.br/painel/tinymce/tinymce.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.3.8/plugins/imagetools/plugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.3.8/plugins/image/plugin.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="https://residencia.abhh.com.br/painel/plugins/bootstrap/js/tether.min.js"></script>
+    <script src="https://residencia.abhh.com.br/painel/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="https://residencia.abhh.com.br/painel/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="https://residencia.abhh.com.br/painel/js/waves.js"></script>
+    <!--calendario -->
+    <script src="https://residencia.abhh.com.br/painel/js/calender.js"></script>
+    <script src="https://residencia.abhh.com.br/painel/calendario/moment.min.js"></script>
+    <script src="https://residencia.abhh.com.br/painel/calendario/fullcalendar.min.js"></script>
+    <!--Menu sidebar -->
+    <script src="https://residencia.abhh.com.br/painel/js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="https://residencia.abhh.com.br/painel/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="https://residencia.abhh.com.br/painel/js/custom.js"></script>
+
+    <script src="https://residencia.abhh.com.br/painel/js/jquery-clockpicker.min.js"></script>
+    <!-- ============================================================== -->
+    <script type="text/javascript" src="https://residencia.abhh.com.br/painel/js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="https://residencia.abhh.com.br/painel/js/setup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+   <script src="index.js"></script>
+</body>
+</html>
